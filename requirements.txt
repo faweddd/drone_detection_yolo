@@ -1,0 +1,6 @@
+
+ultralytics==8.3.141
+torch==2.7.0
+opencv-python
+
+
