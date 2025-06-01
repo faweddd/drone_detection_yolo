@@ -1,5 +1,15 @@
 from ultralytics import YOLO
+import torch
 
-model = YOLO('yolov8n.pt') 
+if __name__ == '__main__':
 
-model.train(data='data.yaml', epochs=50, imgsz=640, batch=16, name='drone_detection')
+    model = YOLO('yolo8s.pt')
+
+    model.train(
+    data='data.yaml',
+    epochs=100,
+    imgsz=640,
+    batch=16,
+    device=0,
+    name='drone_detection'
+    )
